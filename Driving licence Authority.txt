@@ -1,0 +1,80 @@
+Driving licence Authority
+
+class licence
+
+works:
+
+LLR Apply  (Class)
+driving test
+new licence   (Class)
+mode of payment for applying the licence
+modify existing
+finding the country
+apply fine  (Class)
+display the details
+display all licence numbers
+check for fine
+check the driving class name using Licence number
+link aadhaar number with driving licence  (Class)
+renewal of licence
+check for the expiry of licence
+upgradation of licence to heavy driving
+apply for duplicate Licence
+reapply for new driving licence (Want to get reason)
+
+
+
+
+
+#ifndef HEADER_H_INCLUDED
+#define HEADER_H_INCLUDED
+
+class LLR
+{
+private:
+    string name;
+    string fName;
+    string blood_Group;
+    string llr_Number;
+    int age;
+    string licence_type;
+    string dob;
+    int llrdd,llrmm,llryyyy;
+    string gender;
+    string status;
+    int mobile_Number;
+    string address;
+    string Issue_Authority;
+public:
+    
+    
+    
+};
+
+class Licence:public LLR
+{
+private:
+    string licence_Number;
+    int lidd,limm,liyyyy;
+    int ledd,lemm,leyyyy;
+    
+};
+
+class Fine:public Licence
+{
+    int fine_Amount;
+    string status;
+    int fdd,fmm,fyyyy;
+    int pdd,pmm,pyyyy;
+    string fine_Reason;
+    string place_Of_Fine;
+};
+
+class Aadhaar:public Licence
+{
+    int aadhaar_Number;
+};
+
+
+
+#endif // HEADER_H_INCLUDED
